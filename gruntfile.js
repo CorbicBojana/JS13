@@ -38,7 +38,9 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          "dist/js/main.min.js": "app/js/main.js"
+          "dist/js/game.min.js": "app/js/game.js",
+          "dist/js/index.min.js": "app/js/index.js",
+          "dist/js/ui.min.js": "app/js/ui.js"          
         }
       }
     },
