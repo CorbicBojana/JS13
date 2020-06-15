@@ -9,8 +9,80 @@
   <title>Frontend Mentor | Rock, Paper, Scissors game</title>
 
   <link rel="stylesheet" href="./css/main.min.css" />
+
+  <script src="js/game.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/index.js" defer></script>
 </head>
 <body>
+
+  <div class="game">
+    <div class="game__header">
+      <img src="./images/logo.svg" alt="logo" class="game__logo">
+      
+      <div class="game__scoreLabel">
+        <span>Score</span>
+        <span class="game__score">12</span>
+      </div>
+    </div>
+
+    <div class="game__body">
+      <div class="game__controls showControls">
+        <div class="game__control paper" data-type="paper">
+          <div class="holder">
+            <img src="./images/icon-paper.svg" alt="" class="game__img">
+          </div>
+        </div>
+        <div class="game__control scissors" data-type="scissors">
+          <div class="holder">
+            <img src="./images/icon-scissors.svg" alt="" class="game__img">
+          </div>
+        </div>
+        <div class="game__control rock" data-type="rock">
+          <div class="holder">
+            <img src="./images/icon-rock.svg" alt="" class="game__img">
+          </div>
+        </div>
+      </div>
+
+      <!-- GAME RESULT -->
+
+      <div class="game__result">
+        <div class="game__side">
+          <span>You Picked</span>
+          <div class="game__side-holder player">
+            
+          </div>
+        </div>
+
+        <div class="game__final">
+          <span class="game__finalText">YOU LOSE</span>
+          <button class="playAgain">Play Again</button>
+        </div>
+
+        <div class="game__side">
+          <span>The House Picked</span>
+          <div class="game__side-holder cpu">
+            <div class="holder"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rules__container">
+    <div class="rules">
+        <h2>RULES</h2>
+        <button class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#3B4262" fill-rule="evenodd" d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z" opacity=".25"/></svg>
+        </button class="close">
+      <div class="rules__main">
+        <img src="./images/image-rules.svg" alt="" class="rules__img">
+      </div>
+    </div>
+  </div>
+
+  <button class="rulesBtn">RULES</button>
   
   <script type="module" src="../app/js/main.js"></script>
 
